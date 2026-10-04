@@ -20,7 +20,7 @@
 | 공통 로딩/오류/빈 UI           | States.jsx                                | E2E 확인                        |
 | 상태→렌더링 3곳 이상           | 필터, 미리보기, 검증, 제출 중, 알림       | E2E 확인                        |
 | 배포 URL에서 CRUD              | vercel.json, README 절차                  | 미배포                          |
-| GitHub 소스 공유               | 지정 저장소 URL                           | 코드 업로드 전                  |
+| GitHub 소스 공유               | 지정 저장소 URL                           | main 반영 완료                  |
 | README 실행 방법·스택          | README.md                                 | 작성                            |
 | env 분리 및 Git 제외           | .env.example, .gitignore                  | 파일 규칙 확인, 커밋 전 재점검  |
 | 보너스: 전역 상태              | ToastProvider Context                     | E2E 확인                        |
@@ -34,7 +34,7 @@
 - [x] 실제 환경변수 설정
 - [x] `npm run test:remote`: CRUD 및 다른 사용자 접근 차단
 - [x] 로컬 실제 브라우저 등록·조회·수정·새로고침 후 유지 (삭제는 원격 API 검증)
-- [ ] GitHub 반영
+- [x] GitHub 반영
 - [ ] 배포 URL 기록
 - [ ] 배포 환경 CRUD 및 상세 주소 직접 접속·새로고침
 

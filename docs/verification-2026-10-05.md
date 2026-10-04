@@ -41,7 +41,16 @@
 
 - 실제 환경변수 적용 후 `npm run build`: 성공
 - 단일 JavaScript 번들 약 512 kB(압축 전)에 대한 Vite 안내가 있습니다. 빌드 오류는 아닙니다.
-- GitHub 소스 업로드 및 Vercel 배포 전입니다.
+- 구현 커밋 `b7083ff`를 GitHub 저장소의 main에 push했습니다. 기존 이력은 유지했습니다.
+- 실제 연결 정보와 환경변수·테스트 산출물을 커밋에서 제외했고, 새 커밋은 GitHub noreply 이메일을 사용했습니다.
+- Vercel 배포는 사용자 요청에 따라 보류했습니다.
 - 배포 URL의 CRUD·직접 주소 접근·새로고침 검증은 배포 후 별도로 수행해야 합니다.
+
+## Supabase 보안 진단
+
+- Security Advisor: 오류 0개, 경고 4개 확인.
+- 자동 RLS 기능이 만든 `public.rls_auto_enable()`의 실행 권한 경고 2개: 일반 사용자 직접 실행 권한 회수를 준비했으며 적용 승인 대기 중입니다.
+- Anonymous Sign-Ins Allowed: 이 앱의 익명 학습 공간 설계에 해당하며, 소유자별 접근 제한은 실제 검증했습니다.
+- Leaked Password Protection Disabled: 현재 앱은 비밀번호 로그인을 제공하지 않습니다. 해당 설정은 변경하지 않았습니다.
 
 API 키, 세션 토큰, 비밀번호 및 사용자 개인 정보는 이 문서에 기록하지 않습니다.
